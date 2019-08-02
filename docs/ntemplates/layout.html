@@ -23,6 +23,9 @@
         }, 500);
         });
     </script>
+{% endblock %}
+
+{% block extrahead %}
     <!-- Да это же onesignal  -->
     <link rel="manifest" href="/manifest.json" />
     <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
@@ -35,4 +38,3 @@
     });
     </script>
 {% endblock %}
-
