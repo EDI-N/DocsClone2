@@ -37,15 +37,9 @@
 {% endblock %}
 
 {% block extrahead %}
-    <!-- Да это же onesignal 
-    <link rel="manifest" href="/manifest.json" />
-    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
-    <script>
-    var OneSignal = window.OneSignal || [];
-    OneSignal.push(function() {
-        OneSignal.init({
-        appId: "7b5d5a38-eca8-4bfd-a89b-623c20fbd404",
-        });
-    });
-    </script>  -->
+    <!-- эт по идее должен быть скриптец для правки текста на сайте --> 
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="molly.js"></script>
+    <script>show_molly_widget();</script>
+    </script>
 {% endblock %}

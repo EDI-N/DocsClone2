@@ -121,7 +121,7 @@ html_theme = 'sphinx_rtd_theme'
 
 def setup(app):
     app.add_stylesheet('theme_overrides.css')
-    app.add_javascript('ultra_custom.js')
+    app.add_javascript['ultra_custom.js', 'molly.js' ]
 #попробуем пока не использовать    app.add_javascript('OneSignalSDKWorker.js')
 #попробуем пока не использовать    app.add_javascript('left_button.js')
 
