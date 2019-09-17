@@ -3,6 +3,16 @@
  <!-- {% set script_files = script_files + ["_static/OneSignalSDKWorker.js"] %} -->
 
 {% block footer %}
+    <div class="error_modal" style="display:none">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h1>Hello, I am a modal!</h1>
+            <label for="modalUrlError"><b>Url</b></label>
+            <input type="text" placeholder="url" name="modalUrlError" id="error_modal_url">
+            <label for="modalUrlMessage"><b>Message</b></label>
+            <input type="text" placeholder="Message" name="modalUrlMessage" id="error_modal_message">
+        </div>
+    </div>
     {{ super() }}
     <!-- Return to Top -->
     <a href="javascript:" id="topchik"><i class="icon-chevron-up"></i></a>

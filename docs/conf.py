@@ -32,7 +32,6 @@ import os
 extensions = [
     'sphinx.ext.autodoc',
     'sphinxcontrib.contentui',
-    'routes',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -378,13 +377,3 @@ epub_exclude_files = ['search.html']
 
 # If false, no index is generated.
 #epub_use_index = True
-
-
-
-from routes import Mapper
-map = Mapper()
-def referals(environ, result):
-    result["referer"] = environ.get("HTTP_REFERER")
-    return True
-m.connect("/{controller}/{action}/{id}",
-    conditions=dict(function=referals))
