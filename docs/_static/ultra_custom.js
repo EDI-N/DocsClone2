@@ -10,32 +10,38 @@
 ();
 
 (function () {
-	var modal = document.querySelector(".error_modal");
-    var trigger = document.querySelector(".trigger");
-    var closeButton = document.querySelector(".close-button");
+	var modal = document.querySelector(".error_modal");   
+	var closeButton = document.querySelector(".close-button");
+	closeButton.addEventListener("click", hideModal);
 
-    function toggleModal() {
-        modal.classList.toggle("show-modal");
-    }
+	var urlErrorModal = document.querySelector("#error_modal_url");
+	var messageErrorModal = document.querySelector("#error_modal_message");
 
-    function windowOnClick(event) {
-        if (event.target === modal) {
-            toggleModal();
-        }
-    }
-
-    trigger.addEventListener("click", toggleModal);
-    closeButton.addEventListener("click", toggleModal);
-	window.addEventListener("click", windowOnClick);
+    function shwModal() {
+        modal.style.visibility = "visible" ;
+	}
 	
+	function hideModal() {
+        modal.style.visibility = "hidden" ;
+    }
+		
 function getErrorTextModal(e) 
 {
         if (!e) e= window.event; 
         if((e.ctrlKey) && ((e.keyCode==10)||(e.keyCode==13))) 
-        {trigger.click();} 
+        {shwModal();} 
 	return true;
 }	
 	document.onkeypress = getErrorTextModal;    
+
+	function sendHiddenJivoMessage()
+	{
+		var jivoMess =  document.querySelector(".inputField_G5 __textarea_1Z __bluredEmpty_1o");
+		document.querySelector(".inputField_G5 __bluredEmpty_1o").value = 'ewewewe@fcgg.kkk';		
+		jivoMess.value(`${messageErrorModal.value} (${urlErrorModal.value})`);
+
+		document.querySelector(".button_Jn _green_1q").click();
+	}
 })
 ();
 
