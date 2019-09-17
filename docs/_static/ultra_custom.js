@@ -9,7 +9,7 @@
 })
 ();
 
-(function () {
+document.addEventListener("DOMContentLoaded", () => {
 	var modal = document.querySelector(".error_modal");   
 	var closeButton = document.querySelector(".close-button");
 	closeButton.addEventListener("click", hideModal);
@@ -42,6 +42,7 @@ function getErrorTextModal(e)
 
 		document.querySelector(".button_Jn _green_1q").click();
 	}
-})
-();
+  });
+
+
 
