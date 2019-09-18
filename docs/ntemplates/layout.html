@@ -3,7 +3,18 @@
  <!-- {% set script_files = script_files + ["_static/OneSignalSDKWorker.js"] %} -->
 
 {% block footer %}
-    <div class="error_modal">
+    <form action="blablabla.php" method="post" enctype="multipart/form-data" class="form-horizontal">
+        <input type="text" class="form-control house" placeholder="Номер телефона" name="client_number" required>
+        <input type="text" class="form-control house" placeholder="Улица" name="client_street" required>
+        <input type="text" class="form-control house" placeholder="Дом" name="client_home" required> 
+        <input type="number" class="form-control apartment" placeholder="Квартира" min="0" name="client_apartment">
+        <input type="number" class="form-control entrance" placeholder="Подъезд" min="0" name="client_entrance">
+        <input type="number" class="form-control floor" placeholder="Этаж" min="0" name="client_floor">
+        <textarea rows="4" class="form-control client-note" name="client_note" placeholder="Примечание"></textarea>
+        <button type="submit" class="btn btn-warning">Отправить заказ</button>
+    </form>
+
+    <!-- <div class="error_modal">
         <div class="modal-content">
             <span class="close-button">&times;</span>
             <h1>Вы нашли ошибку?</h1>
@@ -13,7 +24,7 @@
             <input type="text" placeholder="Message" name="modalUrlMessage" id="error_modal_message">
             <button onclick="sendHiddenJivoMessage()">send</button>
         </div>
-    </div>
+    </div> -->
     {{ super() }}
     <!-- Return to Top -->
     <a href="javascript:" id="topchik"><i class="icon-chevron-up"></i></a>

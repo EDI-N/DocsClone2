@@ -133,3 +133,24 @@
    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
 	/* MODAL END */
+
+	/* самопальный модал */
+   .form-control {
+      display: inline-block;
+      box-sizing: border-box;
+      width: 45%;
+      margin:5px;
+      padding: 10px 5px;
+    }
+    .client-note{
+      display: block;
+      box-sizing: border-box;
+      width: 80%;
+      margin: 5px auto;
+      padding: 5px;
+    }
+    .btn {
+      display: block;
+      margin: 10px auto;
+      padding: 10px;
+    }

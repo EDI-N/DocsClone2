@@ -48,6 +48,19 @@ function getErrorTextModal(e)
 
 // Папытка номер два
 
+
+
+$elements = $("input, textarea, button");
+$elements.keypress(function (event) {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        if (this.nodeName === "BUTTON") {
+            $(this).click();
+        }
+       $(this).next().focus();           
+    }
+});
+
 // Ñêðèïò îòïðàâêè ñîîáùåíèé îá îøèáêå http://mistakes.ru/script/mistakes_dev
 // Âåðñèÿ 4.1
 // 27.04.2015
@@ -57,7 +70,6 @@ nN = navigator.appName;
 
 function createMessage() {
 // Èçìåíèòå ñëåäóþùóþ ñòðîêó. Çäåñü íóæíî óêàçàòü ïóòü ê ôàéëó mistakes.php
-  var misphploc = '/mistakes/mistakes.php'
   var container = document.createElement('div')
   var scroll = dde.scrollTop || db.scrollTop;
   var mtop = scroll + 100 + 'px';
@@ -186,7 +198,7 @@ function CtrlEnter(){
 		alert('Не так не пайдет- давай меньше 300 символов');
     }
     else if (sel.selected_text.length == 0) {
-		alert('Âûäåëèòå îøèáêó!');
+		alert('Выдели какой нибудь символ!');
     }
     else {
       // Get selection context.
