@@ -9,4 +9,4 @@
 
 .. raw:: html
 
-    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT0BHJfvDrs8NiXVcEriJzwol86n2YhFWW-pyYKv5cM_Dpc9qZKTPodvb-lOeHeXQ/pubhtml?widget=true&amp;headers=false" height="1500px" width="100%"></iframe>
+    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT0BHJfvDrs8NiXVcEriJzwol86n2YhFWW-pyYKv5cM_Dpc9qZKTPodvb-lOeHeXQ/pubhtml?widget=false&amp;headers=false&chrome=false" height="800px" width="100%"></iframe>
