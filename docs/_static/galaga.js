@@ -399,12 +399,12 @@
     });
   
     function initGameStart() {
-      if (window.innerWidth > 1200) {
-        screen.canvas.width = 1200;
-        screen.canvas.height = 500;
+      if (window.innerWidth > 1000) {
+        screen.canvas.width = 1000;
+        screen.canvas.height = 440;
         gameSize = {
-          width: 1200,
-          height: 500
+          width: 1000,
+          height: 440
         };
         invaderMultiplier = 3;
         initialOffsetInvader = 420;
