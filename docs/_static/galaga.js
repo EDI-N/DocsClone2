@@ -399,30 +399,30 @@
     });
   
     function initGameStart() {
-      if (window.innerWidth > 1000) {
-        screen.canvas.width = 1000;
-        screen.canvas.height = 440;
+      if (window.innerWidth > 1100) {
+        screen.canvas.width = 1100;
+        screen.canvas.height = 500;
         gameSize = {
-          width: 1000,
-          height: 440
+          width: 1100,
+          height: 500
         };
         invaderMultiplier = 3;
         initialOffsetInvader = 420;
       } else if (window.innerWidth > 800) {
-        screen.canvas.width = 800;
-        screen.canvas.height = 500;
+        screen.canvas.width = 900;
+        screen.canvas.height = 600;
         gameSize = {
-          width: 800,
-          height: 500
+          width: 900,
+          height: 600
         };
         invaderMultiplier = 2;
         initialOffsetInvader = 280;
       } else {
-        screen.canvas.width = 500;
-        screen.canvas.height = 25;
+        screen.canvas.width = 600;
+        screen.canvas.height = 300;
         gameSize = {
-          width: 500,
-          height: 250
+          width: 600,
+          height: 300
         };
         invaderMultiplier = 1;
         initialOffsetInvader = 140;
