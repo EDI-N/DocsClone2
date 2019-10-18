@@ -9,4 +9,24 @@ We could not find this page!.
 .. image:: loudly-crying-face.png
    :align: center
 
+
+.. raw:: html
+
+   <!DOCTYPE html>
+   <html>
+   <head>
+   <script src="galaga.js"></script>
+   </head>
+   <body>
+   <p class="center">Space Invadors destroyed this page! Take revenge on them!
+   <br/> Use <span class="label label-danger">Space</span> to shoot and <span class="label label-danger">←</span>&#160;<span class="label label-danger">→</span> to move!&#160;&#160;&#160;<button class="btn btn-default btn-xs" id="restart">Restart</button></p>
+   
+   <canvas id="space-invaders"/>
+   </body>
+   </html>
+
+
+
+
+
 Please, try using the links from the sidebar to find what you are looking for.
