@@ -35,6 +35,9 @@ extensions = [
     'notfound.extension',
 ]
 
+# for 404 page
+notfound_default_language = 'uk'
+
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['ntemplates']
 
